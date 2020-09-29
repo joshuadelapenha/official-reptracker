@@ -1,0 +1,9 @@
+<h1> Edit a lifter </h1>
+
+<%= form_for @lifter do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %> <br/>
+  <%= f.label :age %>
+  <%= f.number_field :age %><br/>
+  <%= f.submit "Edit Lifter Stats" %>
+<% end %>

@@ -1,0 +1,7 @@
+<h1> Here you can find all exercise Logs </h1>
+ 
+<ul>
+    <% @exerciselogs.map do |exerciselog|%>
+        <li> <%= link_to exerciselog.exercise.name, "/exerciselogs/#{exerciselog.id}" %></li>
+    <% end %> 
+</ul>

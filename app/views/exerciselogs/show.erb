@@ -1,0 +1,8 @@
+<h1>Info on the exercise log of your choice</h1>
+<h2><%= @exerciselog.lifter.name%></h2>
+<p><b><%= @exerciselog.exercise.name%></b></p>
+<p><%= @exerciselog.reps  %> repetitions<p>
+<p><%= @exerciselog.weight %> pounds</p>
+<p><%= @exerciselog.lifter.name%></p>
+
+<%= button_to "Delete this exerciselog from records", @exerciselog, :method => :delete %> 

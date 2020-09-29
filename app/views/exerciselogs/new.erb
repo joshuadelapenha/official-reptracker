@@ -1,0 +1,17 @@
+<h1>Create a new exercise log for your lifter </h1>
+
+<%= form_for @exerciselog do |f| %>
+    <%= f.label :reps %>
+    <%= f.number_field :reps %> <br>
+
+  <%= f.label :weight %>
+    <%= f.number_field :weight %> <br>
+
+  <%= f.label :lifter_id, "Lifter:" %>
+    <%= f.collection_select :lifter_id, @lifters,  :id, :name %> <br>
+    
+    <%= f.label :exercise_id, "Exercise: " %>
+    <%= f.collection_select :exercise_id, @exercises, :id, :name %> <br>
+
+  <%= f.submit "Submit Exerciselog" %>
+<% end %>

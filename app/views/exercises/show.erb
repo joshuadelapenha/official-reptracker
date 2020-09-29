@@ -1,0 +1,4 @@
+<h1> <%=@exercise.name%></h1>
+<p><%=@exercise.category%>
+
+<%= button_to "Delete #{@exercise.name} from records", @exercise, :method => :delete %>

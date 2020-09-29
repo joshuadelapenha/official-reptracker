@@ -1,0 +1,7 @@
+<h1>All Lifters</h1>
+
+<ul>
+    <% @lifters.map do |lifter|%>
+        <li> <%= link_to lifter.name, "/lifters/#{lifter.id}" %></li>
+    <% end %> 
+</ul>

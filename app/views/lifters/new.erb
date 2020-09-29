@@ -1,0 +1,9 @@
+<h1> Add a new Lifter </h1>
+
+<%= form_for @lifter do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %> <br/>
+  <%= f.label :age %>
+  <%= f.number_field :age %><br/>
+  <%= f.submit "Create a new lifter" %>
+<% end %>

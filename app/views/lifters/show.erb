@@ -1,0 +1,13 @@
+<h1><u>Info on the lifter of your choice</u></h1>
+<h2><i><%= @lifter.name%></i></h2>
+<p>Age: <%=@lifter.age%> </p>
+
+<ul>
+<% @lifter.exerciselogs.each do |exerciselog_var| %>
+    <li><%=  exerciselog_var.exercise.name %>, <%=  exerciselog_var.weight %> | <%= exerciselog_var.reps %> </li>
+<% end %>
+</ul>
+
+<hr>
+
+<%= button_to "Delete #{@lifter.name} from records", @lifter, :method => :delete %>

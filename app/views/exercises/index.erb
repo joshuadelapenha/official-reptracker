@@ -1,0 +1,6 @@
+<h1> All exercises in your database </h1>
+
+
+<% @exercises.map do |exercise|%>
+        <li> <%= link_to exercise.name, "/exercises/#{exercise.id}" %></li>
+    <% end %> 
